@@ -105,8 +105,8 @@ img:hover {
 .content-wrapper {
   margin: 0 auto;
   max-width: 1000px;                                          
-  background: linear-gradient(black, #BA0C2F); 
-  padding: 2rem;
+  background: linear-gradient(black, #BA0C2F);
+  padding: clamp(1rem, 2.5vw, 1rem); 
   border-radius: 8px;                   
   box-shadow: 0 0 20px rgba(186, 12, 47, 0.6); 
 }
@@ -260,7 +260,9 @@ section a:hover {
     grid-template-columns: 1fr minmax(0, 1fr);;
     gap: 10px 20rem;
   }
-    
+  section dl {
+    grid-template-columns: 1fr;
+  }
 }
 
 /**************   Contact Page   *****************/
